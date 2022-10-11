@@ -1,0 +1,10 @@
+sensitive_value = list(input('Enter a sensitive value: '))
+# print(sensitive_value)
+thelength = len(sensitive_value[0:-4])
+last_four = sensitive_value[-4::1]
+# print(last_four)
+# print(thelength)
+xlist = list('x' * thelength)
+# print(xlist)
+xlist.extend(last_four)
+print(''.join(xlist))
